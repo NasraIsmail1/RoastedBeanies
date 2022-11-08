@@ -1,0 +1,154 @@
+img{
+    size: 100px;   
+}
+
+
+.button{
+    background-color: rgb(59, 25, 25);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {font-size: 16px;}
+  .button2 {font-size: 16px;}
+  .button3 {font-size: 16px;}
+  .button4 {font-size: 16px;}
+  .button5 {font-size: 16px;}
+  
+
+h1{
+    color: rgb(59, 25, 25);
+    outline-color: white;
+    font-family:'Lucida Sans';
+    border-radius: 20px;
+}
+
+body{
+    color: rgb(59, 25, 25);
+}
+
+.header{
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgb(59, 25, 25);;
+    color: white;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h3{
+    color: rgb(59, 25, 25);
+    outline-color: white;
+    font-family:'Lucida Sans';
+    text-align: center;
+    font-size: x-large;   
+}
+
+h4{
+    color: rgb(59, 25, 25);
+    outline-color: white;
+    font-family:'Lucida Sans';
+    text-align: center;
+    font-size: x-large;
+}
+
+.header2{
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'cursive'; 
+}
+
+
+.blinking{
+    animation:blinkingText 1.2s infinite;  
+}
+
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgb(59, 25, 25);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: #faf9f9;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
